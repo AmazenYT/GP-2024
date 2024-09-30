@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://c2yvsipdwpil"]
+
+[ext_resource type="Texture2D" uid="uid://cn5o5nmjm2a2j" path="res://assets/PNG/Sprites/Missiles/spaceMissiles_008.png" id="1_7jeb7"]
+
+[node name="Bullet" type="CharacterBody2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = ExtResource("1_7jeb7")
