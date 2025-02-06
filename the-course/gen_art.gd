@@ -11,11 +11,16 @@ func _draw() -> void:
 
 
 	var theta_inc = PI * 2.0 / l		
+	var px = 0
+	var py = 0
 	for i in range(l):
 		var theta = theta_inc * i
 		var x = sin(theta) * radius
 		var y = cos(theta) * radius
+		draw_line(Vector2(px, py), Vector2(x, y), Color.GREEN, 10)
 		draw_circle(Vector2(x, y), radius, Color.BLUE, false)
+		px = x
+		py = y
 	
 pass
 	
