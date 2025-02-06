@@ -15,7 +15,7 @@ func _draw() -> void:
 		var theta = theta_inc * i
 		var x = sin(theta) * radius
 		var y = cos(theta) * radius
-		draw_circle(Vector2(x. y), radius, Color.BLUE, false)
+		draw_circle(Vector2(x, y), radius, Color.BLUE, false)
 	
 pass
 	
@@ -25,8 +25,10 @@ func _process(delta: float) -> void:
 
 
 func _on_h_slider_value_changed(value: float) -> void:
+	radius = value
 	pass # Replace with function body.
 
 
 func _on_num_lines_value_changed(value: float) -> void:
+	count = value
 	pass # Replace with function body.
