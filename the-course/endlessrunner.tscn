@@ -1,0 +1,31 @@
+[gd_scene load_steps=5 format=3 uid="uid://buxiqcwkdu8fo"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_tkrdn"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_6bfco"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_py622"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_irj6g"]
+size = Vector3(4.21277, 1, 14.4247)
+
+[node name="CharacterBody3D" type="CharacterBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.818439, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.49341, 0, 2.23983)
+shape = SubResource("CapsuleShape3D_tkrdn")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.49341, 0, 2.23983)
+mesh = SubResource("CapsuleMesh_6bfco")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.49341, 2, 7.23983)
+
+[node name="Ground" type="StaticBody3D" parent="."]
+physics_material_override = SubResource("PhysicsMaterial_py622")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Ground"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.60638, 0, 6.71237)
+shape = SubResource("BoxShape3D_irj6g")
