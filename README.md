@@ -52,6 +52,20 @@ Weekly engagement mark is assessessed automatically by evaluating the number of 
 
 # Semester 2
 
+## Week 6 - 3D FPS
+- [3D nodes](labs/3d.md)
+
+### Lab Exercise
+- [Create a 3D endless runner](labs/endless_runner.md)
+
+## Week 5 - Enemy AI
+- [Air Sea Battle](https://www.retrogames.cz/play_349-Atari2600.php)
+- [Lab](labs/enemy_ai.md)
+
+## Week 4 - Tweens & Juice
+- [Tweens](labs/tweens.md)
+- [Tweens lab](labs/tweens_lab.md)
+
 ## Week 3
 - Shooter Game
 

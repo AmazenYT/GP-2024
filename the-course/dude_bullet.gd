@@ -30,6 +30,7 @@ func _process(delta):
 			$"../dude".ufo_count = uc + 1
 			$"../CanvasLayer/ufo_count".text = "UFO COUNT:" + str($"../dude".ufo_count)
 			# delete the ufo
+			c.get_collider().drop_loot()
 			c.get_collider().queue_free()
 			
 		elif coll.is_in_group("dude"):
@@ -39,6 +40,9 @@ func _process(delta):
 			coll.respawn()
 			pass
 		# create an explosion
+		
+		
+		
 		var e = explosion.instantiate()
 		e.modulate = coll.color
 		get_parent().add_child(e)
