@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://buxu2viploqds"]
+
+[ext_resource type="Script" uid="uid://bmhird42h7xoj" path="res://3d_coin.gd" id="1_jgupq"]
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_iotog"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_iqtwc"]
+
+[node name="3DCoin" type="Area3D"]
+script = ExtResource("1_jgupq")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("SphereShape3D_iotog")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+mesh = SubResource("SphereMesh_iqtwc")
